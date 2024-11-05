@@ -809,15 +809,17 @@ body {
   }
 
   .services-section {
-    margin-top: 600px;
+    margin-top: 680px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
 }
 
 @media (max-width: 480px) {
   .services-section {
-    margin-top: 650px;
-    padding-right: 10px;
-    padding-left: 10px;
+    margin-top: 705px;
+    padding-right: 8px;
+    padding-left: 8px;
   }
 
   
@@ -848,8 +850,8 @@ body {
   }
 
   .promise-section {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 8px;
+    padding-left: 8px;
     
   }
   .promise-title {
