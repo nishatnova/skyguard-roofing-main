@@ -809,14 +809,18 @@ body {
   }
 
   .services-section {
-    margin-top: 700px;
+    margin-top: 600px;
   }
 }
 
 @media (max-width: 480px) {
   .services-section {
-    margin-top: 800px;
+    margin-top: 650px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
+
+  
 
   .services-title {
     font-size: 0.9rem; /* Smaller font size */
@@ -841,6 +845,12 @@ body {
 
   .section-image img {
     max-height: 250px; /* Reduce image height on smaller screens */
+  }
+
+  .promise-section {
+    padding-right: 10px;
+    padding-left: 10px;
+    
   }
   .promise-title {
     font-size: 0.75rem;
@@ -1513,8 +1523,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-}
+
 
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
   .icons-container {
