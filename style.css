@@ -169,6 +169,7 @@ body {
   text-align: left; /* Left-justified text */
   max-width: 50%; /* Limits width for better readability */
   padding-left: 50px; /* Added padding to the left */
+  display: block;
 }
 
 .contact-form {
@@ -902,19 +903,21 @@ body {
 
 /* Medium-small devices (481px to 600px) */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  .landing-image .title {
-    position: absolute;
-    /* left: 0; */
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--white);
-    font-size: 1.3rem;
-    font-weight: bold;
-    padding: 1rem;
-    z-index: 1;
-    text-align: left;
-    padding-left: 15px;
-  }
+  /* Ensure the title element covers the full width */
+.landing-image .title {
+  position: absolute;
+  top: 60% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important; /* Center both vertically and horizontally */
+  color: var(--white);
+  font-size: 1.5rem !important;
+  font-weight: bold;
+  text-align: center !important;
+  padding: 1rem;
+  z-index: 1;
+  width: 100% !important; /* Ensures title spans full width of container */
+}
+
 
   .landing-image > .subheading {
     position: absolute;
@@ -922,24 +925,26 @@ body {
     top: 75%;
     color: var(--white);
     font-size: 1.1rem;
-    padding: 1 px;
+    padding: 1px;
     z-index: 1;
     text-align: left;
     padding-left: 15px;
     max-width: 80%;
+    display: none;
+
   }
 
   .landing-image .contact-form {
     position: absolute;
     right: 10%;
-    top: 375px;
+    top: 250px !important;
     background-color: rgba(28, 28, 28, 0.85);
     color: var(--white);
     padding: 1.5rem;
     border-radius: 8px;
     max-width: 1000px;
     z-index: 2;
-    width: 83%;
+    width: 83% !important;
   }
 
   .contact-form h2 {
@@ -998,16 +1003,16 @@ body {
 @media only screen and (min-width: 481px) and (max-width: 600px) {
   .landing-image .title {
     position: absolute;
-    /* left: 0; */
-    top: 50%;
-    transform: translateY(-50%);
+    top: 60% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
     color: var(--white);
     font-size: 2.3rem;
     font-weight: bold;
     padding: 1rem;
     z-index: 1;
-    text-align: left;
-    padding-left: 15px;
+    text-align: center !important;
+    width: 100% !important; 
   }
 
   .landing-image > .subheading {
@@ -1016,17 +1021,18 @@ body {
     top: 75%;
     color: var(--white);
     font-size: 1.35rem;
-    padding: 1 px;
+    padding: 1px;
     z-index: 1;
     text-align: left;
     padding-left: 15px;
     max-width: 80%;
+    display: none;
   }
 
   .landing-image .contact-form {
     position: absolute;
     right: 10%;
-    top: 465px;
+    top: 300px !important;
     background-color: rgba(28, 28, 28, 0.85);
     color: var(--white);
     padding: 1.5rem;
@@ -1045,10 +1051,10 @@ body {
   .landing-image .title {
     position: absolute;
     left: 0;
-    top: 35%;
+    top: 40% !important;
     transform: translateY(-50%);
     color: var(--white);
-    font-size: 2.6rem;
+    font-size: 2.4rem !important;
     font-weight: bold;
     padding: 1rem;
     z-index: 1;
@@ -1061,7 +1067,7 @@ body {
     left: 0;
     top: 56%;
     color: var(--white);
-    font-size: 1.4rem;
+    font-size: 1.2rem !important;
     padding: 1 px;
     z-index: 1;
     text-align: left;
@@ -1072,7 +1078,7 @@ body {
   .landing-image .contact-form {
     position: absolute;
     right: 10%;
-    top: 0%;
+    top: 450px !important;
     background-color: rgba(28, 28, 28, 0.85);
     color: var(--white);
     padding: 1.5rem;
